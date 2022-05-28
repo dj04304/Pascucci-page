@@ -1,0 +1,404 @@
+@font-face{ font-family: 'Noto Serif KR', serif;;
+        src: url(../Noto_Serif/NotoSerif-Bold.ttf);
+}
+#wrap{width: 100%;}
+/* 헤더 */
+#header{width: 100%; height: 130px;
+        position: fixed;
+}
+
+        
+#header_in{width: 100%; height: 130px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #210C0C;
+        border: solid 2px #C90E0E;
+        box-sizing: border-box;
+        opacity: 80%;}
+  
+/* 로고 */       
+#header_in .logo{width: 200px; height: 130px;
+                padding-left: 50px;
+                display: flex;
+                align-items: center;
+                text-align: center;}
+                
+#header_in .logo > a > span{font-size: 20px;
+                color: #C90E0E;}
+#header_in .logo > a{font-size: 12px;
+                color: #fff;}
+                
+#header_in .logo > a > p{font-size: 10px;}
+                        
+
+/* 오른쪽 메뉴 */
+
+#header_in .h_group{width: 1150px; height: 160px;}
+
+#header_in .info_mn{width: 370px; height: 30px;
+                float: right;
+                display: flex;
+                line-height: 35px;
+                justify-content: space-around;}
+                
+#header_in .info_mn li {font-size: 10px;}
+
+#header_in .info_mn li a{color: #fff;
+                padding-right: 15px;
+                border-right: 1px solid #fff;
+                opacity: 80%;               
+}
+
+#header_in .info_mn li:last-child a{border-right: 0px;}
+                
+
+#header_in .nav{width: 100%; height: 80px;
+                display: flex;
+                align-items: center;}
+
+#header_in .nav ul{display: flex;}
+
+
+#header_in .nav ul li{padding-right: 50px;
+                }
+
+#header_in .nav ul li a{font-size: 15px;
+                color: #fff;
+                text-transform: uppercase;}
+
+/* 가맹 사업 */
+#header_in .business{width: 200px; height: 60px;
+                position: absolute;
+                top: 45px; right: 100px;
+                text-align: center;
+                line-height: 60px;
+                border-radius: 10px;
+                background-color: #C1064C;}
+                
+#header_in .business span{font-size: 15px;
+                color: #fff;}
+
+/* 메인 이미지 */
+#img{ width: 100%; height: 850px;
+        padding-top: 160px;
+        background: url(../images/광고1.png) no-repeat 50% 0;
+        background-size: cover;       
+}
+
+/* 메인이미지 안 글귀 */
+#img .img_in{margin: 0 auto;
+        width: 840px; height: 550px;
+        margin-top: 130px;
+        border: 7px solid #9EAEE4;     
+}
+
+#img .img_in p{text-align: center;
+                padding-top: 60px;
+                color: #EE5A5A;
+               
+}
+
+#img .img_in .img_p1{ font-size: 50px;
+                font-weight: bolder;
+}
+
+#img .event{ margin: 0 auto;
+        margin-top: 80px;
+        width: 500px; height: 90px;
+        background-color: #edf3f399;
+        border-radius: 50px;
+}
+
+#img .event p{font-size: 25px;
+        font-weight: bold;
+        font-family: 'Noto Serif KR', serif;
+        padding-top: 30px;
+                
+}
+
+/*메인 이미지 2*/
+#img2{width: 100%; height: 230px;
+        background: url(../images/광고2.png) no-repeat 50% 0;
+        background-size: cover;
+}
+
+/* 콘텐츠 1 */
+#items{width: 100%; height: 750px;}
+
+#items_in{margin: 0 auto;
+        width: 1250px; height: 780px;}
+/* 콘텐츠 1 헤더 */
+#items_in .h_box{display: flex; justify-content: center;
+                padding-top: 80px;
+                font-size: 25px;
+                font-family: 'Noto Serif KR', serif;
+                color: #707070;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+}
+
+#items_in span{color: #C90E0E;
+}
+
+/* 콘텐츠 1 이미지 */
+#items_in .i_img{ width: 1200px; height: 450px;
+                display: flex;  
+                 
+}
+
+#items_in .ade{ width: 300px; height: auto;
+        object-fit: cover;
+        padding:70px 0 0 10px;
+}
+
+#items_in .i_img li p{ text-align: center;
+                        padding-top: 20px;
+                        font-family: 'Noto Serif KR', serif;
+}
+
+#items_in .i_img li span{
+        font-size: 14px;           
+}
+
+/* 콘텐츠 1 버튼 */
+#items_in .btn{width: 100px; height: 50px;
+        margin: 0 auto;
+        margin-top: 120px;
+}
+#items_in .btn button{ width: 100px; height: 40px;
+                border-radius: 10px;
+                border: none;
+                font-size: 12px;
+                font-family: 'Noto Serif KR', serif;
+                color: darkgrey;
+                background-color: #edf3f399;
+}
+
+
+/* 콘텐츠 2 goods */
+#goods{width: 100%; height: 780px;}
+
+#goods_in{margin: 0 auto;
+        width: 1250px; height: 780px;}
+
+
+/* 콘텐츠 2 헤더 */
+#goods_in .h_box{display: flex; justify-content: center;
+        padding-top: 80px;
+        font-size: 25px;
+        font-family: 'Noto Serif KR', serif;
+        color: #707070;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+}
+
+#goods_in span{color: #C90E0E;
+}
+
+
+/* 콘텐츠 2 이미지 */
+#goods_in .g_img{ width: 1200px; height: 450px;
+        display: flex; 
+}
+
+#goods_in .items{ width: 400px; height: 350px;
+                object-fit: contain;
+                padding:70px 0 0 13px;
+}
+
+#goods_in .g_img li p{ text-align: center;
+                padding-top: 20px;
+                font-family: 'Noto Serif KR', serif;
+}
+
+#goods_in .g_img li span{
+font-size: 14px;           
+}
+
+#goods_in .g_img_h{ display: none;
+}
+
+
+/* 콘텐츠 2 버튼 */
+#goods_in .btn{width: 200px; height: auto;
+        margin: 0 auto;
+        margin-top: 130px;
+        padding-left: 80px;
+}
+
+#goods_in .btn button{margin: auto;
+        width: 20px; height: 20px;
+        border-radius: 50px;
+        border: none;
+        margin-left: 10px;
+        background-color: #a3cfcf82;
+}
+
+#goods_in button:last-child{
+        background-color: #C90E0E;
+}
+
+/*콘텐츠 3 channel*/
+#channel{width: 100%; height: 1000px;
+       }
+
+#channel::before{width: 100%; height: 1000px;
+        content: "";
+        position: absolute;
+        background: url(../images/background1.png) no-repeat 0 0;
+        background-size: cover;
+        opacity: 30%;
+        z-index: -9999;
+}
+
+#channel_in{margin: 0 auto;
+        width: 1400px; height: 1000px;
+        opacity: 100%;}
+/* 콘텐츠 3 헤더 */
+#channel_in .h_box{display: flex; justify-content: center;
+        padding-top: 80px;
+        font-size: 25px;
+        font-family: 'Noto Serif KR', serif;
+        color: #707070;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+}
+
+#channel_in span{color: #C90E0E;
+}
+
+/* 콘텐츠 3 이미지 */
+#contents{ width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 90px;
+
+}
+
+#contents1{ width: 900px; height: 700px;
+}
+
+#contents1 .img1{width: 100%; height: 300px;
+                background: url(../images/introduce.jpg) no-repeat 0 0;
+                background-size: cover;}
+
+#contents1 .img1 p{
+                padding-top: 20px;
+                padding-left: 20px;
+                font-size: 30px;
+                font-family: 'Noto Serif KR', serif;
+                color: #fff;
+}
+
+#contents1 .img1 span{font-size: 15px;
+                color: #fff;
+}
+
+#contents1 .img_in{width: 100%; height: 300px;
+                margin-top: 100px;
+                display: flex;
+                justify-content: space-between;
+}
+
+#contents1 .img2{width: 400px;
+                background: url(../images/introduce2.jpg) no-repeat 0 0;
+                background-size: cover;
+                font-family: 'Noto Serif KR', serif;    
+                color: #fff;
+                
+}
+
+#contents1 .img2 p{padding: 20px 0 0 20px;
+                font-size: 27px;
+                padding-bottom: 190px;
+                
+        
+}
+#contents1 .img2 span{
+                font-size: 15px;
+                color: #fff;
+                display: flex;
+                justify-content: space-around                   ;
+
+}
+
+#contents1 .img2 div{ width: 80px; height: 30px;
+                border: 2px #fff solid;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+}
+
+
+#contents1 .img3{width: 400px;
+                background:url(../images/Cafe\ 1.jpg);
+                background-size: cover;
+                font-family: 'Noto Serif KR', serif;
+                color: #fff;
+}
+
+#contents1 .img3 p{padding: 20px 0 0 20px;
+        font-size: 27px;
+        padding-bottom: 190px;
+
+}
+#contents1 .img3 span{
+        font-size: 15px;
+        color: #fff;
+        display: flex;
+        justify-content: space-around                   ;
+
+}
+
+#contents1 .img3 div{ width: 80px; height: 30px;
+        border: 2px #fff solid;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+}
+
+
+
+
+#contents2{width: 400px; height: 700px;
+        background-color: blueviolet;}
+
+
+#contents2 .img1{width: 400px; height: 270px;
+        background: url(../images/introduce4.jpg);
+        background-size: cover;
+}
+
+        
+#contents2 .img2{width: 400px; height: 430px;
+        background-color: blue;
+
+}
+
+/* 콘텐츠 4 유튜브 */
+#video{width: 100%; height: 690px;
+        background-color: blueviolet;
+}
+
+#video_in{margin: 0 auto;
+        width: 1400px; height: 690px;
+        background-color:cadetblue; 
+
+}
+
+#video_in .h_box{display: flex; justify-content: center;
+        padding-top: 80px;
+        font-size: 25px;
+        font-family: 'Noto Serif KR', serif;
+        color: #707070;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+}
+
+#video_in span{color: #C90E0E;
+}
+
+#footer{width: 100%; height: 230px;
+        background-color: lightskyblue;}
