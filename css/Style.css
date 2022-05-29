@@ -1,4 +1,4 @@
-@font-face{ font-family: 'Noto Serif KR', serif;;
+@font-face{ font-family: 'Noto Serif KR', serif;
         src: url(../Noto_Serif/NotoSerif-Bold.ttf);
 }
 #wrap{width: 100%;}
@@ -10,7 +10,7 @@
         
 #header_in{width: 100%; height: 130px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: #210C0C;
         border: solid 2px #C90E0E;
         box-sizing: border-box;
@@ -18,7 +18,7 @@
   
 /* 로고 */       
 #header_in .logo{width: 200px; height: 130px;
-                padding-left: 50px;
+                padding-left: 20px;
                 display: flex;
                 align-items: center;
                 text-align: center;}
@@ -117,7 +117,7 @@
 }
 
 /*메인 이미지 2*/
-#img2{width: 100%; height: 230px;
+#img2{width: 100%; height: 300px;
         background: url(../images/광고2.png) no-repeat 50% 0;
         background-size: cover;
 }
@@ -271,21 +271,22 @@ font-size: 14px;
 /* 콘텐츠 3 이미지 */
 #contents{ width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-top: 90px;
 
 }
 
-#contents1{ width: 900px; height: 700px;
+#contents1{ width: 800px; height: 700px;
 }
+
+/* 좌측이미지 */
 
 #contents1 .img1{width: 100%; height: 300px;
                 background: url(../images/introduce.jpg) no-repeat 0 0;
                 background-size: cover;}
 
 #contents1 .img1 p{
-                padding-top: 20px;
-                padding-left: 20px;
+                padding: 20px 0 0 20px;
                 font-size: 30px;
                 font-family: 'Noto Serif KR', serif;
                 color: #fff;
@@ -301,7 +302,7 @@ font-size: 14px;
                 justify-content: space-between;
 }
 
-#contents1 .img2{width: 400px;
+#contents1 .img2{width: 370px;
                 background: url(../images/introduce2.jpg) no-repeat 0 0;
                 background-size: cover;
                 font-family: 'Noto Serif KR', serif;    
@@ -319,7 +320,7 @@ font-size: 14px;
                 font-size: 15px;
                 color: #fff;
                 display: flex;
-                justify-content: space-around                   ;
+                justify-content: space-around;
 
 }
 
@@ -331,7 +332,7 @@ font-size: 14px;
 }
 
 
-#contents1 .img3{width: 400px;
+#contents1 .img3{width: 370px;
                 background:url(../images/Cafe\ 1.jpg);
                 background-size: cover;
                 font-family: 'Noto Serif KR', serif;
@@ -347,7 +348,7 @@ font-size: 14px;
         font-size: 15px;
         color: #fff;
         display: flex;
-        justify-content: space-around                   ;
+        justify-content: space-around;
 
 }
 
@@ -360,33 +361,74 @@ font-size: 14px;
 
 
 
-
-#contents2{width: 400px; height: 700px;
-        background-color: blueviolet;}
+/* 우측 이미지 */
+#contents2{width: 400px; height: 700px;}
 
 
 #contents2 .img1{width: 400px; height: 270px;
         background: url(../images/introduce4.jpg);
         background-size: cover;
+        font-family: 'Noto Serif KR', serif;
 }
 
-        
-#contents2 .img2{width: 400px; height: 430px;
-        background-color: blue;
+#contents2 .img1 p{padding: 150px 0 20px 20px;
+                font-size: 27px;
+                color: #fff;
+}
 
+#contents2 .img1 span{padding-left: 20px;
+                font-size: 15px;
+                color: #fff;
+}
+
+#contents2 .intro{width: 400px; height: 430px;
+                font-family: 'Noto Serif KR', serif;
+}
+
+#contents2 .intro::before{width: 400px; height: 430px;
+        position: absolute;
+        content: "";
+        background: url(../images/background2_1.jpg) no-repeat 0 0;
+        background-size: contain;
+        opacity: 80%;
+        z-index: -9999;
+        
+}
+
+
+#contents2 .intro h3{
+        padding-top: 50px;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #EE5A5A;
+}
+
+#contents2 .intro p{padding-top: 60px;
+        padding-left: 20px;
+        font-size: 13px;
+        line-height: 25px;
+        color: #640606;
 }
 
 /* 콘텐츠 4 유튜브 */
 #video{width: 100%; height: 690px;
-        background-color: blueviolet;
+}
+
+#video::before{width: 100%; height: 690px;
+        content: "";
+        position: absolute;
+        background: url(../images/Yback2.jpg) no-repeat 0 0;
+        background-size: cover;
+        opacity: 50%;
+        z-index: -9999;
 }
 
 #video_in{margin: 0 auto;
         width: 1400px; height: 690px;
-        background-color:cadetblue; 
 
 }
 
+/* 유튜브 헤더 */
 #video_in .h_box{display: flex; justify-content: center;
         padding-top: 80px;
         font-size: 25px;
@@ -400,5 +442,123 @@ font-size: 14px;
 #video_in span{color: #C90E0E;
 }
 
-#footer{width: 100%; height: 230px;
-        background-color: lightskyblue;}
+/* 유튜브 박스 */
+#video_in .youtube{ margin-top: 150px;
+        width: 100%; height: 350px;
+}
+
+
+#video_in ul{ width: 100%;
+        display: flex; justify-content: space-around;
+}
+
+#video_in li iframe{width: 400px; height: 260px;
+        background-color: #920606;
+
+}
+
+#video_in li p{padding-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        color: #470E0E;
+}
+
+#video_in .y2{width: 400px; height: 260px;
+        background-color: #9EAEE4;
+}
+
+#video_in .y3{width: 400px; height: 260px;
+        background-color: #EE5A5A;
+}
+
+
+#footer{width: 100%; height: 200px;
+}
+
+
+#footer::before{width: 100%; height: 200px;
+        content: "";
+        position: absolute;
+        background: url(../images/wood-gafed59a9c_1920.jpg) no-repeat 0 0;
+        background-size: cover;
+        opacity: 70%;
+        z-index: -9999;}
+
+
+#footer_in{margin: 0 auto;
+        width: 1400px; height: 200px;
+        display: flex;
+}
+
+#footer1{width: 650px; height: 200px;
+}
+
+#footer1 .ft_h{display: flex;
+        justify-content: space-between;
+
+}
+
+#footer1 .ft_h ul{display: flex;
+        padding-top: 30px;
+        text-align: center;    
+}
+
+#footer1 .ft_h ul li{padding-left: 7px;
+        border-right: 1px solid #fff;
+}
+
+#footer1 .ft_h ul li:last-child{
+        border-right: 0;
+}
+
+#footer1 .ft_h li a{
+        padding-right: 10px;
+        color: #fff;
+        font-size: 10px; 
+}
+
+#footer1 p{ padding:50px 0 0 7px;
+        line-height: 25px;
+        font-size: 12px;
+        color: #fff;
+
+} 
+
+/* 매장찾기 */
+#footer2{width: 680px; height: 200px;
+        font-family: 'Noto Serif KR', serif;
+}
+
+#footer2 h3{padding:30px 0 0 130px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        
+}
+
+
+#footer2 input{ width: 280px; height: 30px;
+        margin:30px 0 0 30px;
+        padding-left: 10px;
+        border-radius: 3px;
+        border: 3px solid #fff;
+        background: transparent;
+        color: #fff;
+}
+
+#footer input:focus{
+        outline: none;
+}
+
+#footer2 input::placeholder{
+        color: #fff;
+}
+
+
+
+#sns{width: 270px; height: 200px;
+}
+
+#sns img{ padding: 80px 0 0 5px;
+
+}
