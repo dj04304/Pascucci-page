@@ -1,0 +1,413 @@
+:root {
+    --pascucci-font:#AC6719;
+}
+
+
+/* 헤더 */
+header{
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 130px;
+    
+    background-color: #210C0C;
+    border: solid 2px #C90E0E;
+    opacity: 80%;
+
+    z-index: 9999;
+}
+
+/* 로그인 메뉴 */
+.login {
+    width: 1700px;
+
+    padding-bottom: 10px;
+}
+
+.login ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    
+    float: right;
+
+    padding-top: 10px;
+
+    width: 300px;
+}
+
+.login li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border-right: 1px solid #ccc;
+
+    width: 60px;
+
+    font-size: 10px;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.login li:last-child {
+    border: none;
+}
+
+/* 로고 및 내비게이션 그룹 */
+
+
+/* 로고 */
+.nav_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 10px;
+}
+
+.logo_group {
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.logo_group h2 {
+    font-size: 20px;
+    color: #C90E0E;
+}
+
+.logo_group p{
+    color: #fff;
+}
+
+.logo_group span{
+
+    font-size: 10px;
+    color: #fff;
+}
+
+/* 내비게이션 */
+
+nav {
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 730px;
+}
+
+nav li {
+    font-size: 15px;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+/* 가맹사업 */
+
+.business {
+    width: 200px;
+    height: 60px;
+
+    text-align: center;
+    line-height: 60px;
+
+    background-color: #C1064C;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.business h2{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100;
+}
+
+/* 서브헤더 */
+
+.sub_mn {
+    position: absolute;
+    top: 125px;
+    
+    width: 100%;
+    height: 0px;
+
+    background-color: #222;
+
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub_mn_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0px auto;
+    padding-top: 20px;
+
+    width: 740px;
+
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.sub_mn ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 140px;
+}
+
+.sub_mn li {
+    font-size: 15px;
+    color: #fff;
+}
+
+.sub_mn a {
+    color: #fff;
+}
+
+/* 서브메뉴 addClass */
+
+.on {
+
+    height: 200px;
+
+    overflow: visible;
+}
+
+.act {
+    opacity: 1;
+}
+
+/* 메인 */
+.main_img {
+    background: url(/images/sub_background.png) no-repeat 0px 0px;
+    background-size: cover;
+
+    opacity: 70%;
+
+    width: 100%;
+    height: 800px;
+
+    z-index: -999;
+}
+
+.main_img h2 {
+
+    text-align: center;
+    line-height: 800px;
+
+    font-size: 100px;
+    color: #210C0C;
+}
+
+/* 콘텐츠 텍스트 */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px auto;
+
+    width: 1500px;
+    height: 600px;
+}
+
+.title h2 {
+    font-size: 70px;
+    color: var(--pascucci-font);
+}
+
+.title_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
+
+    width: 700px;
+}
+
+.title_text h4{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--pascucci-font);
+}
+
+
+.line {
+    width: 200px;
+    height: 1px;
+    
+    background-color: var(--pascucci-font);
+}
+
+.title_Contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 50px;
+
+    text-align: center;
+}
+
+.title_Contents p {
+    font-size: 15px;
+    color: var(--pascucci-font);
+}
+
+
+/* 지도 */
+
+article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0px auto;
+    width: 1500px;
+}
+
+/* 콘텐츠 문구 */
+.contents {
+    margin: 0px auto;
+    padding:50px 0px;
+
+    width: 1500px;
+}
+
+.contents_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+
+}
+
+.contents_title span {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--pascucci-font);
+
+}
+
+.contents_text {
+    text-align: center;
+}
+
+.contents_text p {
+    font-size: 15px;
+    color: var(--pascucci-font);
+}
+
+
+/* 하단 */
+#footer{width: 100%; height: 200px;
+}
+
+
+#footer::before{width: 100%; height: 200px;
+        content: "";
+        position: absolute;
+        background: url(../images/wood-gafed59a9c_1920.jpg) no-repeat 0 0;
+        background-size: cover;
+        opacity: 60%;
+        z-index: -9999;}
+
+
+#footer_in{margin: 0 auto;
+        width: 1400px; height: 200px;
+        display: flex;
+}
+/* 하단 address */
+#footer1{width: 650px; height: 200px;
+}
+
+#footer1 .ft_h{display: flex;
+        justify-content: space-between;
+
+}
+
+#footer1 .ft_h ul{display: flex;
+        padding-top: 30px;
+        text-align: center;    
+}
+
+#footer1 .ft_h ul li{padding-left: 7px;
+        border-right: 1px solid #fff;
+}
+
+#footer1 .ft_h ul li:last-child{
+        border-right: 0;
+}
+
+#footer1 .ft_h li a{
+        padding-right: 10px;
+        color: #fff;
+        font-size: 10px; 
+}
+
+#footer1 p{ padding:50px 0 0 7px;
+        line-height: 25px;
+        font-size: 12px;
+        color: #fff;
+
+} 
+
+/* 매장찾기 */
+#footer2{width: 680px; height: 200px;
+        font-family: 'Noto Serif KR', serif;
+}
+
+#footer2 h3{padding:30px 0 0 130px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        
+}
+
+
+#footer2 input{ width: 280px; height: 30px;
+        margin:30px 0 0 30px;
+        padding-left: 10px;
+        border-radius: 3px;
+        border: 3px solid #fff;
+        background: transparent;
+        color: #fff;
+}
+
+#footer input:focus{
+        outline: none;
+}
+
+#footer2 input::placeholder{
+        color: #fff;
+}
+
+
+/* sns */
+#sns{width: 270px; height: 200px;
+}
+
+#sns img{ margin: 80px 0 0 5px;
+
+}
