@@ -20,3 +20,13 @@ for(let i = 0; i < nav.length; i++) {
         subMnText.classList.remove("act");
    }
 }
+
+const mobileNav = document.querySelector(".mobile_nav");
+const mobileMenu = document.querySelector(".mobile_menu");
+
+console.log(mobileNav);
+
+
+mobileNav.onclick = () => {
+    mobileMenu.classList.toggle("moblie_act")
+}
